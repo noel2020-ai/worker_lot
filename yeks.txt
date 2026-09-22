@@ -1,0 +1,6 @@
+Domain:              spim.aianalystdevph.com
+Record:              _acme-challenge.spim.aianalystdevph.com
+Type:                TXT
+Content:             "Yfduz_OVXsFK0XcpnmQZJHF6vi-WwSw_lfmqNvXlOhc"
+Note:                Some DNS managers add quotes automatically. A single set
+                     is needed.
