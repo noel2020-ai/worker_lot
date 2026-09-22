@@ -1,0 +1,556 @@
+{
+  "version": 1,
+  "overlap_policy": "all",
+  "packets": [
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "enabled": true,
+      "priority": 10,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Amazon"
+        },
+        {
+          "mode": "contains",
+          "value": "AMZN"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    },
+    {
+      "id": "cedar",
+      "name": "Demo Cedar",
+      "enabled": true,
+      "priority": 20,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Cedar"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    },
+    {
+      "id": "harbor",
+      "name": "Demo Harbor",
+      "enabled": true,
+      "priority": 30,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Harbor"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "exact",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 90
+      }
+    },
+    {
+      "id": "maple",
+      "name": "Demo Maple",
+      "enabled": true,
+      "priority": 40,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Maple"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "ignore",
+            "required": false,
+            "weight": 0
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": true,
+            "weight": 20
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    },
+    {
+      "id": "summit",
+      "name": "Demo Summit",
+      "enabled": true,
+      "priority": 50,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Summit"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    },
+    {
+      "id": "willow",
+      "name": "Demo Willow",
+      "enabled": true,
+      "priority": 60,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Willow"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "exact",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 90
+      }
+    },
+    {
+      "id": "quartz",
+      "name": "Demo Quartz",
+      "enabled": true,
+      "priority": 70,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Quartz"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "ignore",
+            "required": false,
+            "weight": 0
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": true,
+            "weight": 20
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    },
+    {
+      "id": "silver",
+      "name": "Demo Silver",
+      "enabled": true,
+      "priority": 80,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Silver"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    },
+    {
+      "id": "copper",
+      "name": "Demo Copper",
+      "enabled": true,
+      "priority": 90,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Copper"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "exact",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 90
+      }
+    },
+    {
+      "id": "meadow",
+      "name": "Demo Meadow",
+      "enabled": true,
+      "priority": 100,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Meadow"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "ignore",
+            "required": false,
+            "weight": 0
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": true,
+            "weight": 20
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    },
+    {
+      "id": "pine",
+      "name": "Demo Pine",
+      "enabled": true,
+      "priority": 110,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Pine"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    },
+    {
+      "id": "birch",
+      "name": "Demo Birch",
+      "enabled": true,
+      "priority": 120,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Birch"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "exact",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 90
+      }
+    },
+    {
+      "id": "aspen",
+      "name": "Demo Aspen",
+      "enabled": true,
+      "priority": 130,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Aspen"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "ignore",
+            "required": false,
+            "weight": 0
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": true,
+            "weight": 20
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    },
+    {
+      "id": "oak",
+      "name": "Demo Oak",
+      "enabled": true,
+      "priority": 140,
+      "include": [
+        {
+          "mode": "contains",
+          "value": "Oak"
+        }
+      ],
+      "exclude": [],
+      "matching": {
+        "fields": {
+          "address": {
+            "mode": "similarity",
+            "required": true,
+            "weight": 70
+          },
+          "city": {
+            "mode": "exact",
+            "required": true,
+            "weight": 10
+          },
+          "state": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          },
+          "province": {
+            "mode": "exact",
+            "required": false,
+            "weight": 10
+          }
+        },
+        "address_similarity_min": 0.9,
+        "minimum_score": 80
+      }
+    }
+  ]
+}
